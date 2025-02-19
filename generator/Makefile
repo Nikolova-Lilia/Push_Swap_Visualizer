@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++11
 GENERATOR = generator
 
 # Source files
-SRC = RandNumbGen.cpp PassNumbers.cpp main.cpp
+SRC = RandNumbGen.cpp PassNumbers.cpp Visualize.cpp main.cpp
 OBJ = &(SRC:.cpp = .o)
 
 # for remove

@@ -76,9 +76,22 @@ void executePushSwap(const std::vector<int>& numbers) {
     std::string command = "../push_swap/push_swap \"" + oss.str() + "\"";
     // Path to push_swap program
     std::cout << "Executing command: " << command << std::endl;
-    // Debugging output
 
-    int result = system(command.c_str()); // Execute push_swap
-    if (result == -1)
-        std::cerr << "Error executing push_swap!" << std::endl;
+    //Open a process to read push_swap output
+    FILE* pipe = popen(command.c_str(), "r");
+    if (!pipe) {
+        std::cerr << "Error running push_swap!" << std::endl;
+        return ;
+    }
+
+    // Read Operations from push_swap output
+    char buffer[128];
+    std::vector<std::string> operations;
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+        operations.push_back(buffer);
+    }
+    pclose(pipe);
+
+    // Call visualization function
+    visualizeSorting(numbers, operations);
 }

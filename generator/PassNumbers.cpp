@@ -1,4 +1,4 @@
-#include <all.hpp>
+#include "all.hpp"
 
 /*  We have two ways to pass numbers:
     1. ./a.out 1 2 3 4 (separate arguments)

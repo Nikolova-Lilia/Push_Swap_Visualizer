@@ -24,4 +24,9 @@ Step one - creating a Randow Number Generator. -> RandNumbGen.cpp
 3. Generate random numbers and display them
 
 Once this is complete i am moving on to passing the values to my own
-C program. 
+C program.
+
+Passing the value is completed. Now i need to make sure to get back and check
+if any number is dublicated push_swap will trow an error so i have to make sure that
+there will be no dublicate numbers. Step two, to make sure that i check as many times
+as needed if my input is correct.(currently is only checking twice). 

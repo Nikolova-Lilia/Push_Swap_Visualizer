@@ -14,5 +14,5 @@ int getValidInt(const std::string& prompt);
 std::vector<int> generateNumbers(int nbr, int min, int max);
 
 void    executeSortingProgram(const std::vector<int>& numbers);
-
+void executePushSwap(const std::vector<int>& numbers);
 #endif

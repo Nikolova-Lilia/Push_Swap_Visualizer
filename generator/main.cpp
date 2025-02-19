@@ -26,7 +26,7 @@ int main() {
     std::cout << "\n";
 
     // Pass numbers to the sorting program
-    executeSortingProgram(numbers);
+    executePushSwap(numbers);
 
     return (0);
 }

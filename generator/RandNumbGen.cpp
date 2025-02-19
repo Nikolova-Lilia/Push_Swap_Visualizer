@@ -63,3 +63,22 @@ int getValidInt(const std::string& prompt) {
         return (value); // Valid input
     }
 }
+
+void executePushSwap(const std::vector<int>& numbers) {
+    // Convert vector of numbers into a space-separated string
+    std::ostringstream oss;
+    for (size_t i = 0; i < numbers.size(); i++) {
+        oss << numbers[i];
+        if (i != numbers.size() - 1) oss << " ";
+        // Add space between numbers
+    }
+
+    std::string command = "../push_swap/push_swap \"" + oss.str() + "\"";
+    // Path to push_swap program
+    std::cout << "Executing command: " << command << std::endl;
+    // Debugging output
+
+    int result = system(command.c_str()); // Execute push_swap
+    if (result == -1)
+        std::cerr << "Error executing push_swap!" << std::endl;
+}

@@ -10,14 +10,14 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++11
 GENERATOR = $(GENERATOR_DIR)/generator
 
 # Source files for generator
-SRC = $(GENERATOR_DIR)/RandNumGen.cpp $(GENERATOR_DIR)/PassNumbers.cpp \
+SRC = $(GENERATOR_DIR)/RandNumbGen.cpp $(GENERATOR_DIR)/PassNumbers.cpp \
 	$(GENERATOR_DIR)/main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # Default target: Compile both sorter and generator
 all:
-	$echo "Building sorter..."
-	@$(MAKE) -C $(SORTER_DIR)
+	@echo "Building push_swap..."
+	@$(MAKE) -C $(PUSH_SWAP_DIR)
 	@echo "Building generator..."
 	@$(MAKE) generator
 
@@ -33,14 +33,14 @@ $(GENERATOR): $(OBJ)
 # Clean object files
 clean:
 	@echo "Cleaning sorter..."
-	@$(MAKE) -C $(SORTER_DIR) clean
+	@$(MAKE) -C $(PUSH_SWAP_DIR) clean
 	@echo "Cleaning generator..."
 	rm -f $(OBJ)
 
 #Fully clean everything (binaries and object files)
 fclean: clean
 	@echo "Full clean sorter..."
-	@$(MAKE) -C $(SORTER_DIR) fclean
+	@$(MAKE) -C $(PUSH_SWAP_DIR) fclean
 	@echo "Full clean generator..."
 	rm -f $(GENERATOR)
 

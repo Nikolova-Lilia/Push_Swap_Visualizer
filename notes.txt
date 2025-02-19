@@ -1,0 +1,27 @@
+I had to evaliate someone on push swap two days ago and since it's been
+over an year now, I decided i know now more than what i used to back then
+when i was only staring my career and was doing push swap myself. So here 
+is a simple(hopefully) version of visualizer for the push swap project 
+created by using C++ knowleage.
+
+But first things first. Push Swap is a project about sorting a stack
+of numbers by using only one two stacks and while having a limits on
+how the numbers can be moved from stack tostack. 
+Also the idea is to move numbers with less moves possible.
+So now that we have all this set on the table, lets talk about the 
+visualizer.It must generate numbers as many as the user required to check
+the push swap program. The numbers must be generated randomly, 
+also important the user must be able to set frames on the numbers. 
+Meaning, for example range of -100 up to 100. 
+
+As mantioned already, I am going to use C++ to create it. 
+And also I would be creating a Console-Based Visualizer(meaning Text-Based). 
+Pluses on that choice are faster execution (C++ in particular), also it will
+integrate well with the existing C program. 
+Step one - creating a Randow Number Generator. -> RandNumbGen.cpp
+1. User inputs how many numbers to generate
+2. User specifies the range(min & max values)
+3. Generate random numbers and display them
+
+Once this is complete i am moving on to passing the values to my own
+C program. 

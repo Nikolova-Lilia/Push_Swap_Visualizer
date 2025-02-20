@@ -9,9 +9,6 @@ GENERATOR = generator
 SRC = RandNumbGen.cpp PassNumbers.cpp Visualize.cpp main.cpp
 OBJ = &(SRC:.cpp = .o)
 
-# for remove
-RM = rm -r
-
 # Default target: compile everything
 all: $(GENERATOR)
 
@@ -25,12 +22,12 @@ $(GENERATOR): $(OBJ)
 
 # Clean up compiled files
 clean:
-	RM $(OBJ)
+	rm -rf $(OBJ)
 	@echo "Object files removed."
 
 # Remove object files + executable
 fclean: clean
-	RM $(GENERATOR)
+	rm -rf $(GENERATOR)
 	@echo "Executable removed."
 
 # Recompile everything from scratch

@@ -10,8 +10,9 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++11
 GENERATOR = $(GENERATOR_DIR)/generator
 
 # Source files for generator
-SRC = $(GENERATOR_DIR)/RandNumbGen.cpp $(GENERATOR_DIR)/PassNumbers.cpp \
-	$(GENERATOR_DIR)/Visualize.cpp $(GENERATOR_DIR)/main.cpp
+SRC = $(GENERATOR_DIR)/RandNumbGen.cpp \
+	$(GENERATOR_DIR)/Visualize.cpp $(GENERATOR_DIR)/main.cpp \
+	$(GENERATOR_DIR)/GenColourBlock.cpp $(GENERATOR_DIR)/SortingOperations.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # Default target: Compile both sorter and generator

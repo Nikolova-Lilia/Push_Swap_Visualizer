@@ -64,7 +64,7 @@ int getValidInt(const std::string& prompt) {
     }
 }
 
-void executePushSwap(const std::vector<int>& numbers) {
+void executePushSwap(const std::vector<int>& numbers, std::vector<std::string>& operations) {
     // Convert vector of numbers into a space-separated string
     std::ostringstream oss;
     for (size_t i = 0; i < numbers.size(); i++) {
@@ -80,18 +80,14 @@ void executePushSwap(const std::vector<int>& numbers) {
     //Open a process to read push_swap output
     FILE* pipe = popen(command.c_str(), "r");
     if (!pipe) {
-        std::cerr << "Error running push_swap!" << std::endl;
+        std::cerr << "Error: Failed to run push_swap!" << std::endl;
         return ;
     }
 
     // Read Operations from push_swap output
     char buffer[128];
-    std::vector<std::string> operations;
     while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
-        operations.push_back(buffer);
+        operations.push_back(buffer); // Store operations in the passed reference
     }
     pclose(pipe);
-
-    // Call visualization function
-    visualizeSorting(numbers, operations);
 }

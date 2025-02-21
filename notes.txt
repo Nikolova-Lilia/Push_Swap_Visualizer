@@ -29,4 +29,28 @@ C program.
 Passing the value is completed. Now i need to make sure to get back and check
 if any number is dublicated push_swap will trow an error so i have to make sure that
 there will be no dublicate numbers. Step two, to make sure that i check as many times
-as needed if my input is correct.(currently is only checking twice). 
+as needed if my input is correct.(currently is only checking twice).
+
+Okay, so far the program is working well, in a sense that it is displaying the numbers,
+but my next step i want to try it to display the numbers with colours, like boxes maybe
+and the idea is to use the blocks in colours of rainbow. And each side of the rainbox will
+represent the positive and the negative spector. On to this challenge.
+Representing the sorting process visually using colored bars in the terminal,
+wih a gradient-like effect for negative and positive numbers.
+
+Plan:
+1. Use ASCII blocks to represent numbers as bars.
+2.Use ANSI color codes to color them:
+-Negative numbers -> Blue/Purple shades
+-Positive numbers -> Red/Yellow shades
+-Zero -> White or neutral
+3. Display two stacks (A & B) side by sade, (as before).
+4. Update visualization on each operation(e.g, sa, pb, ra and so on).
+
+Note: So here i want to add a problem that i am facing currently and that is
+the fact that my push swap is working faster than the displaying function, so i now
+plan to try and save all operations in a global list and later use the operations
+to visualize them with the displaying function. When i try to run both at the same
+time it seeems to work well, though it can't finish the process, as the visualizer
+relays strongly on waiting a few second to be able to display each bar uptading.
+Lets see if i can fix this somehow.

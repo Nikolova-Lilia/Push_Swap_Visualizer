@@ -17,6 +17,7 @@ int main() {
 
     // Generate numbers
     std::vector<int> numbers = generateNumbers(nbr, min, max);
+    std::vector<std::string> operations; // Declare operations vector 
 
     // Print the generated numbers
     std::cout << "Generated numbers: ";
@@ -26,7 +27,9 @@ int main() {
     std::cout << "\n";
 
     // Pass numbers to the sorting program
-    executePushSwap(numbers);
+    executePushSwap(numbers, operations);
+        // Call visualization function
+    visualizeSorting(numbers, operations, min, max);
 
     return (0);
 }

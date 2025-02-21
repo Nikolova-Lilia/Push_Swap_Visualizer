@@ -6,7 +6,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++11
 GENERATOR = generator
 
 # Source files
-SRC = RandNumbGen.cpp PassNumbers.cpp Visualize.cpp main.cpp
+SRC = RandNumbGen.cpp \
+Visualize.cpp main.cpp GenColourBlock.cpp SortingOperations.cpp
 OBJ = &(SRC:.cpp = .o)
 
 # Default target: compile everything

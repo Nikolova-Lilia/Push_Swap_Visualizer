@@ -20,28 +20,18 @@
 # define RED "\033[31m"
 # define WHITE "\033[37m"
 
+#define MAX_BLOCKS 10 // Maximum number of blocks to represent numbers
+
 // RandNumbGen.cpp
 int getValidInt(const std::string& prompt);
 std::vector<int> generateNumbers(int nbr, int min, int max);
 void executePushSwap(const std::vector<int>& numbers, std::vector<std::string>& operations);
 
 void visualizeSorting(std::vector<int> numbers, const std::vector<std::string>& operations, int minVal, int maxVal);
-// void applyOperation(std::vector<int>& stackA, std::vector<int>& stackB, std::string op);
-// void printStacks(const std::vector<int>& stackA, const std::vector<int>& stackB);
 
-std::string getColour(int num, int minVal, int maxVal);
-void displayStacks(const std::vector<int>& stackA, const std::vector<int>& stackB, int minVal, int maxVal);
+void simulateSorting(std::vector<int>& stackA, std::vector<int>& stackB, const std::vector<std::string>& operations, int minVal, int maxVal);
+void executeOperation(std::vector<int>& stackA, std::vector<int>& stackB, const std::string& operation);
+void displayStack(const std::vector<int>& stackA, const std::vector<int>& stackB, int minValue, int maxValue);
 
-void pb(std::vector<int>& stackA, std::vector<int>& stackB);
-void pa(std::vector<int>& stackA, std::vector<int>& stackB);
-void sa(std::vector<int>& stackA);
-void sb(std::vector<int>& stackB);
-void ra(std::vector<int>& stackA);
-void rb(std::vector<int>& stackB);
-void rr(std::vector<int>& stackA, std::vector<int>& stackB);
-void rra(std::vector<int>& stackA);
-void rrb(std::vector<int>& stackB);
-void rrr(std::vector<int>& stackA, std::vector<int>& stackB);
-void simulateSorting(std::vector<int>& stackA, std::vector<int>& stackB, int minVal, int maxVal);
-
+void printColouredBlock(int num, int minValue, int maxValue);
 #endif

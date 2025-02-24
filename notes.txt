@@ -54,3 +54,8 @@ to visualize them with the displaying function. When i try to run both at the sa
 time it seeems to work well, though it can't finish the process, as the visualizer
 relays strongly on waiting a few second to be able to display each bar uptading.
 Lets see if i can fix this somehow.
+
+Current State of the program, after 5 days of work on it.
+All blocks are visualized, i need to align them. Second I need to print
+the numbers on screen before so i need what i'm sorting. Lastly i need to
+print all moves to see if the calculating algorithm is good enough.

@@ -168,13 +168,19 @@ void executeOperation(std::vector<int>& stackA, std::vector<int>& stackB, const 
 }
 
 void displayStack(const std::vector<int>& stackA, const std::vector<int>& stackB, int minValue, int maxValue) {
-    std::cout << "\033[1;36mStack A:\033[0m\n";
-    for (int num : stackA)
-        printColouredBlock(num, minValue, maxValue);
+    std::cout << "\n\033[1;33m---- STACK A ----    ----STACK B ----\033[0m\n";
 
-    std::cout << "\n\033[1;35mStack B:\033[0m\n";
-    for (int num : stackB)
-        printColouredBlock(num, minValue, maxValue);
+    int maxSize = static_cast<int>(std::max(stackA.size(), stackB.size()));
 
-    std::cout << "\n\033[1;33m----------------------------------\033[0m\n";
+    for (int i = 0; i < maxSize; i++) {
+        if (i < static_cast<int>(stackA.size()))
+            printColouredBlock(stackA[i], minValue, maxValue);
+        else {
+            std::cout << "    \n"; // Empty space for alignment
+        }
+        if (i < static_cast<int>(stackB.size())) {
+            std::cout << "    "; // Space between stacks
+            printColouredBlock(stackB[i], minValue, maxValue);
+        }
+    }
 }

@@ -8,3 +8,10 @@ Here is a video on how it works on a first stage:
 
 https://github.com/user-attachments/assets/df85714b-c3f3-4331-9f83-d57d761c9854
 
+
+And the final result of the project, after about a week of work on it...
+
+
+
+https://github.com/user-attachments/assets/706e624a-eda1-4daf-b884-913078c95616
+

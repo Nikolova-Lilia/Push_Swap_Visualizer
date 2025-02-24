@@ -19,6 +19,17 @@ int main() {
     std::vector<int> numbers = generateNumbers(nbr, min, max);
     std::vector<std::string> operations; // Declare operations vector 
 
+    // Pass numbers to the sorting program
+    executePushSwap(numbers, operations);
+        // Call visualization function
+    visualizeSorting(numbers, operations, min, max);
+
+    // Print the input in the end
+    std::cout << "Number of elements that were generated: "
+    << nbr << std::endl;
+    std::cout << "MIN value to start from: " << min << std::endl;
+    std::cout << "MAX value to end to: " << max << std::endl;
+
     // Print the generated numbers
     std::cout << "Generated numbers: ";
     for (int num : numbers) {
@@ -26,10 +37,10 @@ int main() {
     }
     std::cout << "\n";
 
-    // Pass numbers to the sorting program
-    executePushSwap(numbers, operations);
-        // Call visualization function
-    visualizeSorting(numbers, operations, min, max);
+    // Print the number of operations needed to sort the numbers
+    size_t numOperations = operations.size();
+    std::cout << "Number of Operations needed for sorting the numbers: "
+    << numOperations << std::endl;
 
     return (0);
 }

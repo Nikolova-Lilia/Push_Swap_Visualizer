@@ -175,11 +175,11 @@ void displayStack(const std::vector<int>& stackA, const std::vector<int>& stackB
     for (int i = 0; i < maxSize; i++) {
         if (i < static_cast<int>(stackA.size()))
             printColouredBlock(stackA[i], minValue, maxValue);
-        else {
-            std::cout << "    \n"; // Empty space for alignment
-        }
+        // else {
+        //     std::cout << "    \n"; // Empty space for alignment
+        // }
         if (i < static_cast<int>(stackB.size())) {
-            std::cout << "    "; // Space between stacks
+            std::cout << "                        "; // Space between stacks
             printColouredBlock(stackB[i], minValue, maxValue);
         }
     }

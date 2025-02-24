@@ -34,6 +34,14 @@ std::vector<int> generateNumbers(int nbr, int min, int max) {
     for (int i = 0; i < nbr; i++) {
         numbers.push_back(rand() % (max - min + 1) + min);
     }
+
+    // Print the generated numbers
+    std::cout << "Generated Numbers: ";
+    for (int num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
     return (numbers);
 }
 

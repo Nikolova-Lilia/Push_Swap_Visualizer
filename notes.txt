@@ -1,10 +1,13 @@
-I had to evaliate someone on push swap two days ago and since it's been
+It all starts as me thinking about how much i've progressed in the past
+year and a half...
+
+So I had to evaliate someone on push swap two days ago and since it's been
 over an year now, I decided i know now more than what i used to back then
 when i was only staring my career and was doing push swap myself. So here 
 is a simple(hopefully) version of visualizer for the push swap project 
 created by using C++ knowleage.
 
-But first things first. Push Swap is a project about sorting a stack
+But first things, first. Push Swap is a project about sorting a stack
 of numbers by using only one two stacks and while having a limits on
 how the numbers can be moved from stack tostack. 
 Also the idea is to move numbers with less moves possible.
@@ -59,3 +62,9 @@ Current State of the program, after 5 days of work on it.
 All blocks are visualized, i need to align them. Second I need to print
 the numbers on screen before so i need what i'm sorting. Lastly i need to
 print all moves to see if the calculating algorithm is good enough.
+
+It is finally working and it looks well, of course i can aciave even better
+performance, but as a collaboration between C and C++ and knowing that
+it frint everything on the screen i would say it's impressive work 
+especually finished in about a week of intense work on it.
+On to the next challenge. ^^

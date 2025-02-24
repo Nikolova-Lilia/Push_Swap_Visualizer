@@ -44,12 +44,12 @@ void printColouredBlock(int num, int minValue, int maxValue) {
     int normalized = (num - minValue) * 10 / range; // Scale to 1-10 blocks
     int blockCount = std::max(1, normalized); // Ensure at least 1 block
 
-    int red = 255 - normalized * 25; // Red decreases as number increases
-    int green = normalized * 25;       // Green increases as number increases
+    int red = normalized * 25; // Red decreases as number increases
+    int green = 255 - normalized * 25;       // Green increases as number increases
     int blue = 128;              // Keep a stable blue for contrast
 
     for (int i = 0; i < blockCount; i++) {
         std::cout << "\033[48;2;" << red << ";" << green << ";" << blue << "m  \033[0m";
     }
-    std::cout << "\n"; // Newline after each row
+     std::cout << "\n"; // Newline after each row
 }

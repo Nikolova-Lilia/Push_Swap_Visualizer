@@ -6,7 +6,10 @@ In the note.txt file is all the information about the inspiration of writting th
 Here is a video on how it works on a first stage:
 
 
-https://github.com/user-attachments/assets/df85714b-c3f3-4331-9f83-d57d761c9854
+
+https://github.com/user-attachments/assets/3c70cd73-339c-40c6-b2d4-668313f68b7c
+
+
 
 
 And the final result of the project, after about a week of work on it...

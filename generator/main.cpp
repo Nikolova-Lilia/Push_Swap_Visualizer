@@ -24,6 +24,8 @@ int main() {
         // Call visualization function
     visualizeSorting(numbers, operations, min, max);
 
+    std::cout << "Sorting Completed!" << std::endl;
+
     // Print the input in the end
     std::cout << "Number of elements that were generated: "
     << nbr << std::endl;
